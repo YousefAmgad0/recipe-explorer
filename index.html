@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>recipe-explorer</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-white border-bottom sticky-top recipe-navbar"
+    >
+      <div class="container py-2">
+        <a
+          href="/index.html"
+          class="navbar-brand d-flex align-items-center gap-3 mb-0"
+          aria-label="RecipeExplorer home"
+        >
+          <span class="brand-icon" aria-hidden="true">🍴</span>
+
+          <span class="brand-content">
+            <span class="brand-name">RecipeExplorer</span>
+            <span class="brand-tagline">Discover something delicious</span>
+          </span>
+        </a>
+
+        <a href="#search-form" class="btn btn-success navbar-cta">
+          Explore Recipes
+        </a>
+      </div>
+    </nav>
+
+    <header class="hero-section text-center">
+      <div class="container">
+        <span class="hero-badge">🍽️ Find Your Next Favorite</span>
+
+        <h1 class="hero-title">
+          Discover Your Next <span>Favorite Meal</span>
+        </h1>
+
+        <p class="hero-description">
+          Explore delicious recipes, discover new flavors, and find inspiration
+          for your next meal.
+        </p>
+      </div>
+    </header>
+
+    <main class="container py-3">
+      <section class="row justify-content-center mb-4">
+        <div class="col-12 col-md-8 col-lg-6">
+          <form id="search-form" class="d-flex gap-2">
+            <input
+              type="search"
+              id="search-input"
+              class="form-control"
+              placeholder="Search for a recipe..."
+              aria-label="Search recipes"
+              required
+            />
+            <button type="submit" class="btn btn-success">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="recipes-container" class="row g-4">
+        <div class="col-12 text-center">
+          <p class="text-secondary">Search for a recipe to get started.</p>
+        </div>
+      </section>
+
+      <section id="recipe-details" class="mt-5"></section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
