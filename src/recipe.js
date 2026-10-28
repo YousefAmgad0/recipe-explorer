@@ -56,7 +56,7 @@ function displayRecipesDetails(meal) {
     <div class="col-12 col-md-5">
       <img
         src="${meal.strMealThumb}"
-        class="img-fluid rounded-start w-100 h-100 object-fit-cover"
+        class="img-fluid w-100 recipe-image"
         alt="${meal.strMeal}"
       />
     </div>
